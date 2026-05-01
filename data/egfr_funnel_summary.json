@@ -1,0 +1,316 @@
+{
+  "target": "EGFR (CHEMBL203)",
+  "thresholds": {
+    "qed": 0.65,
+    "sascore": 4.0,
+    "lipinski_min": 4,
+    "tanimoto_novelty_cut": 0.85,
+    "heavy_atoms": [
+      20,
+      50
+    ],
+    "logp": [
+      1.0,
+      5.0
+    ]
+  },
+  "funnel": [
+    {
+      "stage": "Stage 0 \u2014 Initial pool (ChEMBL EGFR actives)",
+      "n": 181,
+      "pct_of_initial": 100.0
+    },
+    {
+      "stage": "Stage 1 \u2014 QED >= 0.65",
+      "n": 39,
+      "pct_of_initial": 21.5
+    },
+    {
+      "stage": "Stage 2 \u2014 SAscore <= 4.0",
+      "n": 39,
+      "pct_of_initial": 21.5
+    },
+    {
+      "stage": "Stage 3 \u2014 Lipinski Ro5 (4/4 pass)",
+      "n": 39,
+      "pct_of_initial": 21.5
+    },
+    {
+      "stage": "Stage 4 \u2014 Novelty (Tanimoto < 0.85)",
+      "n": 39,
+      "pct_of_initial": 21.5
+    },
+    {
+      "stage": "Stage 5 \u2014 SGOL size/LogP window",
+      "n": 26,
+      "pct_of_initial": 14.4
+    }
+  ],
+  "scaffold_diversity": {
+    "n_final": 26,
+    "n_unique_scaffolds": 8,
+    "diversity_ratio": 0.31
+  },
+  "final_compounds": [
+    {
+      "molecule_chembl_id": "CHEMBL52829",
+      "smiles": "Cc1cccc(Nc2ncnc3cnc(N(C)C)nc23)c1",
+      "qed": 0.7949409635456117,
+      "sascore": 2.370062081970632,
+      "mw": 280.33500000000004,
+      "logp": 2.53782,
+      "max_tanimoto_to_known_drug": 0.31343283582089554,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL51854",
+      "smiles": "COc1ncc2ncnc(Nc3cccc(Br)c3)c2n1",
+      "qed": 0.7949884729056615,
+      "sascore": 2.4199855566646473,
+      "mw": 332.16100000000006,
+      "logp": 2.9345,
+      "max_tanimoto_to_known_drug": 0.36923076923076925,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL52591",
+      "smiles": "CNc1ncc2ncnc(Nc3cccc(C)c3)c2n1",
+      "qed": 0.7583117224232309,
+      "sascore": 2.3212577052057615,
+      "mw": 266.308,
+      "logp": 2.5135200000000006,
+      "max_tanimoto_to_known_drug": 0.3181818181818182,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL285063",
+      "smiles": "C=CC(=O)Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1",
+      "qed": 0.6747178471005569,
+      "sascore": 2.2025614512955105,
+      "mw": 369.22200000000004,
+      "logp": 4.260400000000002,
+      "max_tanimoto_to_known_drug": 0.32857142857142857,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL136404",
+      "smiles": "C/C=C/C(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1",
+      "qed": 0.6639155212371507,
+      "sascore": 2.513495011347878,
+      "mw": 384.2370000000001,
+      "logp": 4.045500000000002,
+      "max_tanimoto_to_known_drug": 0.3333333333333333,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL334697",
+      "smiles": "C=CC(=O)N(C)c1cc2c(Nc3cccc(Br)c3)ncnc2cn1",
+      "qed": 0.6952765618145935,
+      "sascore": 2.6994233017275757,
+      "mw": 384.2370000000001,
+      "logp": 3.679700000000002,
+      "max_tanimoto_to_known_drug": 0.3424657534246575,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL62176",
+      "smiles": "CN1C(=S)C(C(=O)Nc2ccccc2)c2ccccc21",
+      "qed": 0.8586192928395768,
+      "sascore": 2.6706059108452074,
+      "mw": 282.36800000000005,
+      "logp": 3.1861000000000015,
+      "max_tanimoto_to_known_drug": 0.13978494623655913,
+      "closest_known_drug": "Osimertinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL299622",
+      "smiles": "CNc1ncc2ncnc(Nc3cccc(Br)c3)c2n1",
+      "qed": 0.7684706048512752,
+      "sascore": 2.4039144691314913,
+      "mw": 331.177,
+      "logp": 2.967600000000001,
+      "max_tanimoto_to_known_drug": 0.31343283582089554,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL138363",
+      "smiles": "C=C(C)C(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1",
+      "qed": 0.6639155212371507,
+      "sascore": 2.490352487247936,
+      "mw": 384.2370000000001,
+      "logp": 4.045500000000002,
+      "max_tanimoto_to_known_drug": 0.3380281690140845,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL299881",
+      "smiles": "Cc1cccc(Nc2ncnc3cnc(NCCN4CCOCC4)nc23)c1",
+      "qed": 0.6874415906245668,
+      "sascore": 2.4398671156841765,
+      "mw": 365.44100000000026,
+      "logp": 2.2159199999999997,
+      "max_tanimoto_to_known_drug": 0.36904761904761907,
+      "closest_known_drug": "Gefitinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL53711",
+      "smiles": "CN(C)c1cc2c(Nc3cccc(Br)c3)ncnc2cn1",
+      "qed": 0.7868681517234083,
+      "sascore": 2.3673690050475535,
+      "mw": 344.216,
+      "logp": 3.5969000000000015,
+      "max_tanimoto_to_known_drug": 0.375,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL136511",
+      "smiles": "C=CS(=O)(=O)Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1",
+      "qed": 0.6700284684651479,
+      "sascore": 2.42572352797192,
+      "mw": 405.2770000000001,
+      "logp": 4.0211000000000015,
+      "max_tanimoto_to_known_drug": 0.32857142857142857,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL336264",
+      "smiles": "C=CS(=O)(=O)c1cc2c(Nc3cccc(Br)c3)ncnc2cn1",
+      "qed": 0.733517597044568,
+      "sascore": 2.755099062914663,
+      "mw": 391.25000000000006,
+      "logp": 3.448100000000002,
+      "max_tanimoto_to_known_drug": 0.34782608695652173,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL53156",
+      "smiles": "CNc1ccc2ncnc(Nc3cccc(Br)c3)c2n1",
+      "qed": 0.7686164717854101,
+      "sascore": 2.2949953709882536,
+      "mw": 330.1890000000001,
+      "logp": 3.5726000000000013,
+      "max_tanimoto_to_known_drug": 0.3181818181818182,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL7775",
+      "smiles": "CN(c1ccccc1)c1cc2c(cc1Nc1ccccc1)C(=O)NC2=O",
+      "qed": 0.7008371023982791,
+      "sascore": 2.312103335617506,
+      "mw": 343.3860000000001,
+      "logp": 4.081700000000002,
+      "max_tanimoto_to_known_drug": 0.16304347826086957,
+      "closest_known_drug": "Osimertinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL335440",
+      "smiles": "O=S(=O)(CCO)c1cc2c(Nc3cccc(Br)c3)ncnc2cn1",
+      "qed": 0.666313111899485,
+      "sascore": 2.6590841614560805,
+      "mw": 409.2650000000001,
+      "logp": 2.2969,
+      "max_tanimoto_to_known_drug": 0.3380281690140845,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL52015",
+      "smiles": "CN(C)c1ccc2ncnc(Nc3cccc(Br)c3)c2c1",
+      "qed": 0.7738001285832423,
+      "sascore": 2.0969582358167838,
+      "mw": 343.228,
+      "logp": 4.201900000000003,
+      "max_tanimoto_to_known_drug": 0.38095238095238093,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL53796",
+      "smiles": "CN(C)c1ccc2ncnc(Nc3cccc(Br)c3)c2n1",
+      "qed": 0.7868681517234083,
+      "sascore": 2.3690766973552453,
+      "mw": 344.216,
+      "logp": 3.5969000000000015,
+      "max_tanimoto_to_known_drug": 0.31343283582089554,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL49596",
+      "smiles": "Cn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(N)nc21",
+      "qed": 0.747762929015181,
+      "sascore": 2.418497201334027,
+      "mw": 321.1670000000001,
+      "logp": 2.8845,
+      "max_tanimoto_to_known_drug": 0.14583333333333334,
+      "closest_known_drug": "Osimertinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL50519",
+      "smiles": "COc1ccc2ncnc(Nc3cccc(Br)c3)c2n1",
+      "qed": 0.795411943732026,
+      "sascore": 2.1961982887601383,
+      "mw": 331.17300000000006,
+      "logp": 3.539500000000002,
+      "max_tanimoto_to_known_drug": 0.375,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL51659",
+      "smiles": "C=CC(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1",
+      "qed": 0.6856015491097459,
+      "sascore": 2.469502710036771,
+      "mw": 370.21000000000004,
+      "logp": 3.655400000000002,
+      "max_tanimoto_to_known_drug": 0.323943661971831,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL53777",
+      "smiles": "CN(C)c1ncc2ncnc(Nc3cccc(Br)c3)c2n1",
+      "qed": 0.7872334360852137,
+      "sascore": 2.44996362043217,
+      "mw": 345.20400000000006,
+      "logp": 2.9919000000000002,
+      "max_tanimoto_to_known_drug": 0.3088235294117647,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL345077",
+      "smiles": "C=C[S+]([O-])c1cc2c(Nc3cccc(Br)c3)ncnc2cn1",
+      "qed": 0.7028464941814128,
+      "sascore": 3.7548989555786436,
+      "mw": 375.25100000000003,
+      "logp": 3.782000000000002,
+      "max_tanimoto_to_known_drug": 0.32857142857142857,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL107472",
+      "smiles": "CNc1ncc2cc(-c3c(Cl)cccc3Cl)c(=O)n(C)c2n1",
+      "qed": 0.7802615156973672,
+      "sascore": 2.4675233571867565,
+      "mw": 335.1940000000001,
+      "logp": 3.344000000000001,
+      "max_tanimoto_to_known_drug": 0.16666666666666666,
+      "closest_known_drug": "Osimertinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL139095",
+      "smiles": "C=CS(=O)(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1",
+      "qed": 0.6742049284000395,
+      "sascore": 2.694656559646127,
+      "mw": 406.2650000000001,
+      "logp": 3.416100000000001,
+      "max_tanimoto_to_known_drug": 0.3194444444444444,
+      "closest_known_drug": "Erlotinib"
+    },
+    {
+      "molecule_chembl_id": "CHEMBL50344",
+      "smiles": "CNc1ccc2ncnc(Nc3cccc(Br)c3)c2c1",
+      "qed": 0.7568777143573949,
+      "sascore": 2.0878234876991293,
+      "mw": 329.2010000000001,
+      "logp": 4.177600000000002,
+      "max_tanimoto_to_known_drug": 0.39344262295081966,
+      "closest_known_drug": "Erlotinib"
+    }
+  ]
+}
