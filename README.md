@@ -77,7 +77,7 @@ The notebook is self-contained: it installs all required libraries, queries the 
 ### Option B: Local execution
 
 ```bash
-git clone https://github.com/[username]/EGFR-GenAI-Pipeline.git
+git clone https://github.com/shuklaaks/EGFR-GenAI-Pipeline.git
 cd EGFR-GenAI-Pipeline
 pip install rdkit numpy pandas matplotlib requests
 jupyter notebook EGFR_GenAI_Pipeline_Colab.ipynb
